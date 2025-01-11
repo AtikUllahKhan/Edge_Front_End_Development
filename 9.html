@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Page</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 300px;
+        }
+       
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 10px 0 5px;
+            color: #333;
+        }
+        input {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="text-align: center;color: #333;">Register</h2>
+        <form action="/Submit" method="post">
+            <label for="name">Name:</label>
+            <input type="text"  name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" name="email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" name="password" required>
+            
+            <input style="padding: 10px;background-color: #333;color: white;" type="submit" value="Register">
+        </form>
+    </div>
+</body>
+</html>
