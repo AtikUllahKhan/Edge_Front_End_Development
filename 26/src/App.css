@@ -1,0 +1,107 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #282c34; /* Shared background color */
+  padding: 10px 1px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  
+}
+
+.navbar-brand {
+  color: #61dafb;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.navbar-links {
+  
+  display:inline-flex;
+  gap: 15px;
+  
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+.navbar-links a:hover {
+  background-color: #61dafb;
+  border-radius: 5px;
+}
+
+/* Dropdown menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-button {
+  background-color: #282c34;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 35px;
+  background-color: white;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* Footer styling */
+.footer {
+  background-color: #282c34; /* Shared background color */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer a {
+  color: #61dafb;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
